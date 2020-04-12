@@ -11,6 +11,11 @@
 2. plain text render in a table with links to the project
 3. look up dark mode themes from MUI and follow those
 
+- each project will be a card
+  - image of the frontend, if any, generic cool looking code
+  - each card will have tags on the technology used
+  - clicking on it will bring up a modal that has my role
+
 ## Nav
 
 ### Portfolio Nav
