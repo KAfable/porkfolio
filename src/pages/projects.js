@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 export default () => {
   return (
     <Layout>
-      <h1>Blog Content goes here</h1>
+      <h1>This is the project showcase display</h1>
     </Layout>
   )
 }
