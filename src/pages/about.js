@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../components/header"
+import Layout from "../components/Layout"
 
 export default () => {
   return (
