@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 export default () => {
   return (
     <header>
-      <p>Kevin Afable</p>
+      <h2>Kevin Afable</h2>
       <nav>
         <ul>
           <li>
