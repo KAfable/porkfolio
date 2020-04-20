@@ -1,0 +1,24 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  nav {
+    width: 50%;
+    ul {
+      margin: 0;
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      li {
+        list-style: none;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.link {
+  color: seagreen;
+  font-size: 2rem;
+}
