@@ -13,27 +13,27 @@ export default () => {
           <ul>
             <li>
               <Link className={styles.link} to="/">
-                Home
+                home
               </Link>
             </li>
             <li>
               <Link className={styles.link} to="/projects/">
-                Projects
+                projects
               </Link>
             </li>
             <li>
               <Link className={styles.link} to="/blog">
-                Blog
+                blog
               </Link>
             </li>
             <li>
               <Link className={styles.link} to="/resume">
-                Resume
+                resume
               </Link>
             </li>
             <li>
               <Link className={styles.link} to="/about">
-                About
+                about
               </Link>
             </li>
           </ul>
