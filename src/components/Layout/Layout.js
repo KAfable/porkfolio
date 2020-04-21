@@ -8,7 +8,7 @@ export default props => {
   return (
     <div className={styles.container}>
       <Header />
-      {props.children}
+      <div className={styles.content}>{props.children}</div>
       <Footer />
     </div>
   )
