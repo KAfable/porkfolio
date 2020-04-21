@@ -1,28 +1,33 @@
+@import "../../styles/variables.scss";
+
 header {
-  display: flex;
-  justify-content: space-between;
+  background-color: $bgNav;
 
-  border-bottom: 0.5rem seagreen solid;
+  .container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: $contentWidth;
 
-  h1 {
-    font-size: 1.6rem;
-    margin: 0;
-    a {
-      text-decoration: none;
-    }
-  }
-
-  nav {
-    width: 50%;
-    ul {
+    h1 {
+      font-size: 1.6rem;
       margin: 0;
-      display: flex;
-      flex-flow: row;
-      justify-content: space-between;
-      li {
-        list-style: none;
-        a {
-          text-decoration: none;
+      a {
+        text-decoration: none;
+      }
+    }
+
+    nav {
+      ul {
+        margin: 0;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        li {
+          list-style: none;
+          a {
+            text-decoration: none;
+          }
         }
       }
     }
