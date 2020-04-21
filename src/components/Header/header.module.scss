@@ -1,6 +1,17 @@
 header {
   display: flex;
   justify-content: space-between;
+
+  border-bottom: 0.5rem seagreen solid;
+
+  h1 {
+    font-size: 1.6rem;
+    margin: 0;
+    a {
+      text-decoration: none;
+    }
+  }
+
   nav {
     width: 50%;
     ul {
@@ -19,6 +30,5 @@ header {
 }
 
 .link {
-  color: seagreen;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }

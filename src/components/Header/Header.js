@@ -5,7 +5,9 @@ import styles from "./header.module.scss"
 export default () => {
   return (
     <header>
-      <h2>{"Kevin Afable"}</h2>
+      <h1>
+        <Link to="/">Kevin Afable</Link>
+      </h1>
       <nav>
         <ul>
           <li>
