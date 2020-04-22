@@ -1,0 +1,17 @@
+@import "../../styles/variables.scss";
+
+.banner {
+  margin: 0 auto;
+  text-align: center;
+  .gearWrapper {
+    padding: 2rem 0;
+    // border-radius: 50%;
+    // background-color: red;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+}
