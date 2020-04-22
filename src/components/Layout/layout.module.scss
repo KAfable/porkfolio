@@ -4,10 +4,10 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-
   background-color: $bgPrimary;
-}
-
-.content {
-  flex-grow: 1;
+  .content {
+    flex-grow: 1;
+    max-width: $contentWidth;
+    margin: 0 auto;
+  }
 }
