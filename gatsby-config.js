@@ -1,10 +1,10 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
+// Docs: https://www.gatsbyjs.org/docs/gatsby-config/
 
 module.exports = {
-  /* Your site config here */
-  plugins: ["gatsby-plugin-sass"],
+  siteMetadata: {
+    title: "Kevin Afable",
+    author: "Kevin Afable",
+    description: "Personal site of Kevin Afable, sometimes known as Vyraal1",
+  },
+  plugins: ["gatsby-plugin-sass", "gatsby-source-filesystem"],
 }
