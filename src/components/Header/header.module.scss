@@ -2,13 +2,12 @@
 
 header {
   background-color: $bgNav;
-
+  padding: 0.5rem 0;
   .container {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     max-width: $contentWidth;
-
     h1 {
       font-size: 1.6rem;
       margin: 0;
@@ -26,7 +25,7 @@ header {
         li {
           list-style: none;
           a {
-            padding: 0 1rem;
+            padding: 1rem;
             text-decoration: none;
           }
         }
@@ -37,4 +36,5 @@ header {
 
 .link {
   font-size: 1.6rem;
+  font-weight: 600;
 }
