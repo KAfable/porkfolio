@@ -1,5 +1,7 @@
 # Portfolio Ideas
 
+- FreePik, remember to credit
+
 ## Blog
 
 - leftside navbar + profile, right side content
@@ -16,8 +18,6 @@
   - each card will have tags on the technology used
   - clicking on it will bring up a modal that has my role
 
-## Nav
-
 ### Portfolio Nav
 
 - Home, Portfolio, Blog, About
@@ -33,3 +33,23 @@
 
 - #36393f background priamry
 - always have a label if you use icons
+
+## Schema Notes
+
+- plugsins prefixed by `Gatsby-Source` let you source data from various resources
+
+### Blog Post
+
+1. data
+2. content (in markdown)
+3. title
+
+- do I want a sub-header or subtitle?
+- What about any images itself?
+
+### Project Card
+
+- static thumbnail image
+- gif preview thumbnail on hover
+
+### Projects Detail
