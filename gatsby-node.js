@@ -16,11 +16,37 @@ module.exports.onCreateNode = ({ node, actions }) => {
     }
 }
 
-module.exports.createPages = ({ graphql, actions }) => {
+const slugQuery = `
+    query getSlugs {
+        allMarkdownRemark {
+            nodes {
+                fields {
+                    slug
+                }
+            }
+        }
+    }
+`
+
+module.exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions
 
-    const template = path.resolve("src/templates/blog.js")
-    // Get path to template
-    // get markdown data
+    const component = path.resolve("src/templates/blog.js")
+    // nested destructure
+    const {
+        data: { allMarkdownRemark },
+    } = await graphql(slugQuery)
+
+    allMarkdownRemark.nodes.forEach(node => {
+        createPage({
+            component,
+            path: `/blog/${node.fields.slug}`,
+            // context is an object that can be accessed by the template
+            context: {
+                slug: node.fields.slug,
+            },
+        })
+    })
+
     // create new pages based on markdown data
 }
