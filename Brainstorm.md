@@ -6,6 +6,8 @@
 
 - leftside navbar + profile, right side content
 - Profile has image, external social links
+- you can query for specific frontmatter
+  - so query frontmatter tag that is on the current page
 
 ## Portfolio
 
@@ -18,9 +20,16 @@
   - each card will have tags on the technology used
   - clicking on it will bring up a modal that has my role
 
-### Portfolio Nav
+### Portfolio Pages
 
-- Home, Portfolio, Blog, About
+Goal #1 - generate a slug for each post
+
+- `gatsby.md` -> slug is: `gatsby` -> endpoint at: `/blog/gatsby`
+- we need the slug from the file name to set up the correct endpoint
+
+Goal #2 - Generate the blog post template
+
+Goal #3 - Generate a new page for each post
 
 ### Blog Nav
 
