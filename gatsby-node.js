@@ -1,4 +1,5 @@
-const path = require("path")
+const path = require("path");
+const slugify = require("./util/slugify");
 // this file accesses the different node API's used to build a site
 // what is a new node in gatsby?
 // it's a data structure for storing your gatsby data
@@ -7,14 +8,17 @@ const path = require("path")
 // this let's you access the createNode, aka when Gatsby creates nodes from Transformer Remark
 // on your GraphQL Data layer, and you can run this code
 module.exports.onCreateNode = ({ node, actions }) => {
-    const { createNodeField } = actions
-    // check for all the nodes that are Markdown Remark type in the internal
+    const { createNodeField } = actions;
     if (node.internal.type === "MarkdownRemark") {
-        const value = path.basename(node.fileAbsolutePath, ".md")
-        const input = { node, name: "slug", value }
-        createNodeField(input)
+        const title = node.frontmatter.title;
+        const value = slugify(title);
+        createNodeField({
+            node,
+            name: "slug",
+            value,
+        });
     }
-}
+};
 
 const slugQuery = `
     query getSlugs {
@@ -26,16 +30,14 @@ const slugQuery = `
             }
         }
     }
-`
+`;
 
 module.exports.createPages = async ({ graphql, actions }) => {
-    const { createPage } = actions
-
-    const component = path.resolve("src/templates/blog.js")
-    // nested destructure
+    const { createPage } = actions;
+    const component = path.resolve("src/templates/blog.js");
     const {
         data: { allMarkdownRemark },
-    } = await graphql(slugQuery)
+    } = await graphql(slugQuery);
 
     allMarkdownRemark.nodes.forEach(node => {
         createPage({
@@ -45,8 +47,6 @@ module.exports.createPages = async ({ graphql, actions }) => {
             context: {
                 slug: node.fields.slug,
             },
-        })
-    })
-
-    // create new pages based on markdown data
-}
+        });
+    });
+};
