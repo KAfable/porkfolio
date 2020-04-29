@@ -36,10 +36,12 @@ module.exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions;
     const component = path.resolve("src/templates/blog.js");
     const {
-        data: { allMarkdownRemark },
+        data: {
+            allMarkdownRemark: { nodes },
+        },
     } = await graphql(slugQuery);
 
-    allMarkdownRemark.nodes.forEach(node => {
+    nodes.forEach(node => {
         createPage({
             component,
             path: `/blog/${node.fields.slug}`,
