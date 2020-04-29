@@ -1,6 +1,6 @@
 ---
 title: "Template"
-published: false
+published: true
 date: 2/15/2020
 ---
 
@@ -33,5 +33,6 @@ The first part deal more with templating, styling, and structure of markdown for
 5. Server-side vs Client Side Rendering
 6. What does Create React App do?
 7. Talking about gaming in interviews
+8. How to generate a slug for a blog post?
 
 ## Conclusion

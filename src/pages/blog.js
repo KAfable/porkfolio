@@ -1,35 +1,67 @@
-import React from "react"
-import Layout from "../components/Layout/Layout"
+import React from "react";
+import Layout from "../components/Layout/Layout";
+import { Link } from "gatsby";
 
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby";
 
-// query all of the posts
-// map them through specific posts
+// create a table of content entry
+// title, date published, time to read, preview text
+// icon
+// borders
+
+const getAllPosts = graphql`
+    query getPosts {
+        allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
+            nodes {
+                frontmatter {
+                    title
+                    date
+                    published
+                }
+                fields {
+                    slug
+                }
+                excerpt
+                timeToRead
+                internal {
+                    description
+                }
+            }
+        }
+    }
+`;
 
 export default () => {
-  const data = useStaticQuery(graphql`
-    query {
-      allMarkdownRemark {
-        nodes {
-          frontmatter {
-            title
-            date
-          }
-        }
-      }
-    }
-  `)
-  return (
-    <Layout>
-      {console.log(data)}
-      {data.allMarkdownRemark.nodes.map(({ frontmatter: { title, date } }) => (
-        <div>
-          <h2>{title}</h2>
-          <time>{date}</time>
-          <p>time to read: {5}</p>
-          <p>tags</p>
-        </div>
-      ))}
-    </Layout>
-  )
-}
+    const {
+        allMarkdownRemark: { nodes },
+    } = useStaticQuery(getAllPosts);
+
+    return (
+        <Layout>
+            {nodes.map(
+                ({
+                    frontmatter: { title, date, published },
+                    fields,
+                    excerpt,
+                    timeToRead,
+                }) => {
+                    if (published) {
+                        return (
+                            <div key={fields.slug}>
+                                <h2>
+                                    <Link to={`/blog/${fields.slug}`}>
+                                        {title}
+                                    </Link>
+                                </h2>
+                                <time>{date || "?/??/????"}</time>
+                                <p>time to read: {timeToRead}</p>
+                                <p>{excerpt}</p>
+                                <p>tags</p>
+                            </div>
+                        );
+                    }
+                }
+            )}
+        </Layout>
+    );
+};
