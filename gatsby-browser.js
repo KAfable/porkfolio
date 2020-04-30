@@ -4,4 +4,5 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-require("typeface-montserrat")
+require("typeface-montserrat");
+require("prismjs/themes/prism-tomorrow.css");
