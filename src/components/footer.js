@@ -1,5 +1,5 @@
-import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import React from "react";
+import { graphql, useStaticQuery } from "gatsby";
 
 // favicon
 // github
@@ -7,21 +7,21 @@ import { graphql, useStaticQuery } from "gatsby"
 // twitter
 
 export default () => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-          author
-          description
+    const data = useStaticQuery(graphql`
+        query {
+            site {
+                siteMetadata {
+                    title
+                    author
+                    description
+                }
+            }
         }
-      }
-    }
-  `)
-  return (
-    <footer>
-      <p>Created by {data.site.siteMetadata.author}</p>
-      <p>Icons made by Freepik</p>
-    </footer>
-  )
-}
+    `);
+    return (
+        <footer>
+            <p>Created by {data.site.siteMetadata.author}</p>
+            <p>Icons made by Freepik</p>
+        </footer>
+    );
+};

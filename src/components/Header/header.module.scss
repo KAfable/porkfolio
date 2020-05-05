@@ -1,40 +1,40 @@
 @import "../../styles/variables.scss";
 
 header {
-  background-color: $bgNav;
-  padding: 0.5rem 0;
-  .container {
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    max-width: $contentWidth;
-    h1 {
-      font-size: 1.6rem;
-      margin: 0;
-      a {
-        text-decoration: none;
-      }
-    }
-
-    nav {
-      ul {
-        margin: 0;
+    background-color: $bgNav;
+    padding: 0.5rem 0;
+    .container {
+        margin: 0 auto;
         display: flex;
-        flex-flow: row;
         justify-content: space-between;
-        li {
-          list-style: none;
-          a {
-            padding: 1rem;
-            text-decoration: none;
-          }
+        max-width: $contentWidth;
+        h1 {
+            font-size: 1.6rem;
+            margin: 0;
+            a {
+                text-decoration: none;
+            }
         }
-      }
+
+        nav {
+            ul {
+                margin: 0;
+                display: flex;
+                flex-flow: row;
+                justify-content: space-between;
+                li {
+                    list-style: none;
+                    a {
+                        padding: 1rem;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
     }
-  }
 }
 
 .link {
-  font-size: 1.6rem;
-  font-weight: 600;
+    font-size: 1.6rem;
+    font-weight: 600;
 }
