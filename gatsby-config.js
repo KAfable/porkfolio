@@ -10,7 +10,29 @@ module.exports = {
     },
     plugins: [
         "gatsby-plugin-sass",
-        "gatsby-transformer-remark",
+        {
+            resolve: "gatsby-transformer-remark",
+            options: {
+                plugins: [
+                    {
+                        resolve: "gatsby-remark-prismjs",
+                        classPrefix: "language-",
+                        inlineCodeMarker: null,
+                        aliases: {
+                            js: "javascript",
+                        },
+                        showLineNumbers: false,
+                        noInlineHighlight: false,
+                        prompt: {
+                            user: "root",
+                            host: "localhost",
+                            global: false,
+                        },
+                        escapeEntities: {},
+                    },
+                ],
+            },
+        },
         {
             resolve: "gatsby-source-filesystem",
             options: {
