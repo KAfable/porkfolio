@@ -2,6 +2,7 @@
 title: "ugh, marketing yourself"
 date: 3/20/2020
 published: true
+template: 'blog'
 --- 
 
 ## intro

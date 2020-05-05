@@ -2,6 +2,7 @@
 title: "Template"
 published: true
 date: 2/15/2020
+template: 'blog'
 ---
 
 ## Introduction

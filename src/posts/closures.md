@@ -2,6 +2,7 @@
 title: "Yet Another Closures Post"
 date: "4/22/2020"
 published: true
+template: 'blog'
 ---
 
 First off, why are closures important to know? The best answer to this so far in my eyes is because it's a common interview question.  

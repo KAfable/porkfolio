@@ -4,7 +4,7 @@ date: 6/26/2019
 published: true
 tech: [Zenscript, Java]
 tags: []
-template: 'card'
+template: 'project'
 previewImg: "./ftb_interactions_preview"
 ---
 
