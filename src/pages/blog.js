@@ -11,7 +11,10 @@ import { graphql, useStaticQuery } from "gatsby";
 
 const getAllPosts = graphql`
     query getPosts {
-        allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
+        allMarkdownRemark(
+            filter: { frontmatter: { template: { eq: "blog" } } }
+            sort: { fields: frontmatter___date, order: DESC }
+        ) {
             nodes {
                 frontmatter {
                     title
@@ -60,6 +63,7 @@ export default () => {
                             </div>
                         );
                     }
+                    return <></>;
                 }
             )}
         </Layout>
