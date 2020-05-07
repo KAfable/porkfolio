@@ -3,6 +3,7 @@ import Layout from "../components/Layout/Layout";
 import { graphql } from "gatsby";
 
 export default props => {
+    console.log(props);
     return (
         <Layout>
             <div>This is the project page template</div>
@@ -10,21 +11,16 @@ export default props => {
     );
 };
 
-export const getAllProjects = graphql`
-    query getAllProjects {
-        allMarkdownRemark(
-            filter: { frontmatter: { template: { eq: "project" } } }
-        ) {
-            nodes {
-                fields {
-                    slug
-                }
-                frontmatter {
-                    title
-                    tech
-                    template
-                }
+export const projectQuery = graphql`
+    query projectQuery($slug: String) {
+        markdownRemark(fields: { slug: { eq: $slug } }) {
+            frontmatter {
+                title
+                date
+                published
+                tech
             }
+            html
         }
     }
 `;
