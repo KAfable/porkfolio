@@ -33,7 +33,7 @@ export default ({ title, url }) => {
             <Link to={url}>
                 <div>Preview text here</div>
             </Link>
-            <div classname="external-links">
+            <div className="external-links">
                 <a href="https://github.com/KAfable?tab=repositories">GH</a>
                 <a href="https://github.com/KAfable?tab=repositories">Anchor</a>
             </div>
