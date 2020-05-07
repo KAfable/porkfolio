@@ -35,6 +35,8 @@ module.exports = {
                             maxWidth: 500,
                         },
                     },
+                    `gatsby-transformer-sharp`,
+                    `gatsby-plugin-sharp`,
                 ],
             },
         },
@@ -45,10 +47,6 @@ module.exports = {
                 path: `${__dirname}/src/`,
             },
         },
-        {
-            resolve: `gatsby-transformer-sharp`,
-        },
-        `gatsby-plugin-sharp`,
         "gatsby-plugin-sass",
     ],
 };

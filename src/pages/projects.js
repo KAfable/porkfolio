@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout/Layout";
 import Card from "../components/Card/Card";
+import { graphql } from "gatsby";
 import { Link } from "gatsby";
 
 export default props => {
@@ -24,6 +25,8 @@ export default props => {
 
 // Get an array of all the projects
 // get the relevant preview information for each
+
+// how do we get the preview images of each projecft
 export const getAllProjects = graphql`
     query getAllProjects {
         allMarkdownRemark(
@@ -37,6 +40,7 @@ export const getAllProjects = graphql`
                     title
                     tech
                     template
+                    previewImg
                 }
             }
         }
