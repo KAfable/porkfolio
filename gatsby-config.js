@@ -9,7 +9,6 @@ module.exports = {
             "Personal site of Kevin Afable, sometimes known as Vyraal1",
     },
     plugins: [
-        "gatsby-plugin-sass",
         {
             resolve: "gatsby-transformer-remark",
             options: {
@@ -30,6 +29,12 @@ module.exports = {
                         },
                         escapeEntities: {},
                     },
+                    {
+                        resolve: `gatsby-remark-images`,
+                        options: {
+                            maxWidth: 500,
+                        },
+                    },
                 ],
             },
         },
@@ -40,5 +45,10 @@ module.exports = {
                 path: `${__dirname}/src/`,
             },
         },
+        {
+            resolve: `gatsby-transformer-sharp`,
+        },
+        `gatsby-plugin-sharp`,
+        "gatsby-plugin-sass",
     ],
 };
