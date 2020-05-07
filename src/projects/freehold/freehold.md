@@ -5,7 +5,7 @@ published: true
 tech: [Javascript, Node, REST, SQL, Postgres, React, Express, Knex]
 tags: []
 template: 'project'
-previewImg: null
+previewImg: preview.png
 ---
 
 ## Summary

@@ -5,7 +5,7 @@ published: true
 tech: [Zenscript, Java]
 tags: []
 template: 'project'
-previewImg: "./ftb_interactions_preview"
+previewImg: preview.png
 ---
 
 ![Logo](.\ftb_interactions_preview.png)

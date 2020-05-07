@@ -5,7 +5,7 @@ published: true
 tech: [Javascript, GraphQL, SQL, Postgres, Docker, React, URQL, Apollo Server, Prisma]
 tags: []
 template: 'project'
-previewImg: null
+previewImg: preview.png
 ---
 
 ## Summary
