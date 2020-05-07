@@ -5,7 +5,6 @@ published: true
 tech: [Javascript, Node, GraphQL, SQL, Postgres, React, Apollo Client, Apollo Server, Knex]
 tags: []
 template: 'project'
-previewImg: null
 ---
 
 ## Summary

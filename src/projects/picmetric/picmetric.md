@@ -5,7 +5,6 @@ published: true
 tech: [Javascript, Node, Express, Knex, React, Redux, MaterialUI, Postgres, S3, RezNet]
 tags: []
 template: 'project'
-previewImg: "./"
 ---
 
 ## Summary
