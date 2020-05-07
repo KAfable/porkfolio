@@ -1,15 +1,15 @@
-import React from "react"
-import Header from "../Header/Header"
-import Footer from "../Footer"
+import React from "react";
+import Header from "../Header/Header";
+import Footer from "../Footer";
 
-import styles from "./layout.module.scss"
+import styles from "./layout.module.scss";
 
 export default props => {
-  return (
-    <div className={styles.container}>
-      <Header />
-      <div className={styles.content}>{props.children}</div>
-      <Footer />
-    </div>
-  )
-}
+    return (
+        <div className={styles.container}>
+            <Header />
+            <div className={styles.content}>{props.children}</div>
+            <Footer />
+        </div>
+    );
+};
