@@ -27,13 +27,8 @@ export default () => {
                             </Link>
                         </li>
                         <li>
-                            <Link className={styles.link} to="/resume">
-                                resume
-                            </Link>
-                        </li>
-                        <li>
                             <Link className={styles.link} to="/about">
-                                about
+                                contact
                             </Link>
                         </li>
                     </ul>
