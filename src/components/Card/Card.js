@@ -1,8 +1,9 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Link } from "gatsby";
-import GitHubIcon from "../Icons/Github";
-import styles from "./card.module.scss";
 import Img from "gatsby-image";
+import styles from "./card.module.scss";
+import GitHubIcon from "../Icons/Github";
+import ChainIcon from "../Icons/Chain";
 
 function useHover() {
     const ref = useRef();
@@ -25,7 +26,7 @@ function useHover() {
 }
 
 export default props => {
-    const { title, showcase, img, desc, fe, be } = props;
+    const { title, showcase, img, desc, fe, be, deployment } = props;
     return (
         <div className={styles.card}>
             {img ? (
@@ -47,21 +48,39 @@ export default props => {
                 <div className={styles.externalLinks}>
                     {fe ? (
                         <a href={fe}>
-                            <h3>Frontend</h3> <GitHubIcon fill="#dcddde" />
+                            <h3>Frontend</h3>
+                            <GitHubIcon
+                                className={styles.ghIcon}
+                                fill="#dcddde"
+                            />
                         </a>
                     ) : (
                         false
                     )}
                     {be ? (
                         <a href={be}>
-                            <h3>Backend</h3> <GitHubIcon fill="#dcddde" />
+                            <h3>Backend</h3>
+                            <GitHubIcon
+                                className={styles.ghIcon}
+                                fill="#dcddde"
+                            />
                         </a>
                     ) : (
                         false
                     )}
-                    <a href="https://github.com/KAfable?tab=repositories">
-                        Anchor
-                    </a>
+                    {deployment ? (
+                        <a href={deployment}>
+                            <h3>Deployment</h3>
+                            <ChainIcon
+                                className={styles.chainIcon}
+                                fill="#dcddde"
+                                // height="250"`
+                                // width="250"
+                            />
+                        </a>
+                    ) : (
+                        false
+                    )}
                 </div>
             </div>
         </div>

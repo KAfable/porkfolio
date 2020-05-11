@@ -15,18 +15,18 @@
         a {
             text-decoration: none;
         }
-        h2 {
-            font-size: 3rem;
-        }
         .externalLinks {
             margin-top: 2rem;
             display: flex;
-            a {
+            justify-content: space-around;
+            .ghIcon {
+                width: 2rem;
                 margin: 0 auto;
-                svg {
-                    margin: 0 auto;
-                    width: 3vw;
-                }
+            }
+            .chainIcon {
+                padding-top: 0.2rem;
+                width: 2rem;
+                margin: 0 auto;
             }
         }
     }

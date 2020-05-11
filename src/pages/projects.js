@@ -20,6 +20,7 @@ export default props => {
                         previewText,
                         backend,
                         frontend,
+                        deployment,
                     } = node.frontmatter;
                     const { slug } = node.fields;
                     return (
@@ -29,6 +30,7 @@ export default props => {
                             be={backend}
                             fe={frontend}
                             showcase={`/${template}/${slug}`}
+                            deployment={deployment}
                             img={
                                 previewImg
                                     ? previewImg.childImageSharp.fixed
@@ -64,6 +66,7 @@ export const getAllProjects = graphql`
                     previewText
                     backend
                     frontend
+                    deployment
                     previewImg {
                         childImageSharp {
                             fixed(width: 200) {
