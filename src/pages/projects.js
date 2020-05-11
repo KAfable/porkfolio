@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/Layout/Layout";
 import Card from "../components/Card/Card";
 import { graphql } from "gatsby";
-import { Link } from "gatsby";
+import styles from "./projects.module.scss";
 
 export default props => {
     const {
@@ -13,12 +13,31 @@ export default props => {
     console.log(nodes);
     return (
         <Layout>
-            {nodes.map(node => {
-                const { title, template } = node.frontmatter;
-                const { slug } = node.fields;
-                // return <div key={title}>{title}</div>;
-                return <Card title={title} url={`/${template}/${slug}`} />;
-            })}
+            <section>
+                {nodes.map(node => {
+                    const {
+                        title,
+                        template,
+                        previewImg,
+                        previewText,
+                    } = node.frontmatter;
+                    const { slug } = node.fields;
+                    return (
+                        <div>
+                            <Card
+                                title={title}
+                                url={`/${template}/${slug}`}
+                                img={
+                                    previewImg
+                                        ? previewImg.childImageSharp.fixed
+                                        : false
+                                }
+                                desc={previewText}
+                            />
+                        </div>
+                    );
+                })}
+            </section>
         </Layout>
     );
 };
@@ -40,7 +59,14 @@ export const getAllProjects = graphql`
                     title
                     tech
                     template
-                    previewImg
+                    previewText
+                    previewImg {
+                        childImageSharp {
+                            fixed(width: 200, height: 200) {
+                                ...GatsbyImageSharpFixed
+                            }
+                        }
+                    }
                 }
             }
         }
