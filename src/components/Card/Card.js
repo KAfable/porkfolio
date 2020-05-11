@@ -25,8 +25,7 @@ function useHover() {
 }
 
 export default props => {
-    const { title, url, img, desc, fe, be } = props;
-    console.log(props);
+    const { title, showcase, img, desc, fe, be } = props;
     return (
         <div className={styles.card}>
             {img ? (
@@ -41,20 +40,25 @@ export default props => {
                 false
             )}
             <div className={styles.textPreview}>
-                <Link to={url}>
+                <Link to={showcase}>
                     <h2>{title}</h2>
                     <div>{desc}</div>
                 </Link>
-                <div className="external-links">
+                <div className={styles.externalLinks}>
                     {fe ? (
                         <a href={fe}>
-                            Frontend
-                            <GitHubIcon fill={"#dcddde"} />
+                            <h3>Frontend</h3> <GitHubIcon fill="#dcddde" />
                         </a>
                     ) : (
                         false
                     )}
-
+                    {be ? (
+                        <a href={be}>
+                            <h3>Backend</h3> <GitHubIcon fill="#dcddde" />
+                        </a>
+                    ) : (
+                        false
+                    )}
                     <a href="https://github.com/KAfable?tab=repositories">
                         Anchor
                     </a>
@@ -65,8 +69,3 @@ export default props => {
 };
 
 // has an iamge
-
-// modal on hover
-// transparent layer, blurs the background
-// github link
-// snippet text

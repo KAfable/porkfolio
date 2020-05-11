@@ -2,7 +2,6 @@ import React from "react";
 import Layout from "../components/Layout/Layout";
 import Card from "../components/Card/Card";
 import { graphql } from "gatsby";
-import styles from "./projects.module.scss";
 
 export default props => {
     const {
@@ -10,7 +9,6 @@ export default props => {
             allMarkdownRemark: { nodes },
         },
     } = props;
-    console.log(nodes);
     return (
         <Layout>
             <section>
@@ -20,13 +18,17 @@ export default props => {
                         template,
                         previewImg,
                         previewText,
+                        backend,
+                        frontend,
                     } = node.frontmatter;
                     const { slug } = node.fields;
                     return (
                         <Card
                             key={title}
                             title={title}
-                            url={`/${template}/${slug}`}
+                            be={backend}
+                            fe={frontend}
+                            showcase={`/${template}/${slug}`}
                             img={
                                 previewImg
                                     ? previewImg.childImageSharp.fixed
@@ -60,6 +62,8 @@ export const getAllProjects = graphql`
                     tech
                     template
                     previewText
+                    backend
+                    frontend
                     previewImg {
                         childImageSharp {
                             fixed(width: 200) {
