@@ -35,4 +35,4 @@ JavaScript functions have access to variable in the environment of where it was 
 ## Closures
 
 ? Is it the same as private variables in classes in java?
-? You don't want to run a function that ends up affecting all the other private variables of another type do you?
+? You don't want to run a function that ends up affecting all the other private variables of another type

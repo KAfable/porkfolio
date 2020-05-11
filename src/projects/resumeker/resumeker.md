@@ -5,6 +5,11 @@ published: true
 tech: [Javascript, Node, GraphQL, SQL, Postgres, React, Apollo Client, Apollo Server, Knex]
 tags: []
 template: 'project'
+previewImg: preview.png
+deployment: https://github.com/Lambda-School-Labs/resumeker-be
+backend: https://github.com/Lambda-School-Labs/resumeker-be
+frontend: https://github.com/Lambda-School-Labs/resumeker-fe
+priority: 3
 ---
 
 ## Summary

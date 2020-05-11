@@ -7,7 +7,7 @@ export default () => {
         <header>
             <div className={styles.container}>
                 <h1>
-                    <Link to="/">KA</Link>
+                    <Link to="/">k.</Link>
                 </h1>
                 <nav>
                     <ul>
