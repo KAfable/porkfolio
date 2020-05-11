@@ -6,7 +6,7 @@ export default props => {
     console.log(props);
     return (
         <Layout>
-            <div>This is the project page template</div>
+            <div>Under construction</div>
         </Layout>
     );
 };
