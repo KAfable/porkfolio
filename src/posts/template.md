@@ -1,8 +1,16 @@
 ---
 title: "Template"
 published: true
-date: 2/15/2020
+date: 1/1/1970
 template: 'blog'
+tech: [Zenscript, Java]
+tags: []
+previewImg: preview.png
+previewText: "This is preview text on what gets rendered in the preview paragraph of the card."
+deployment: www.kevinafable.com
+backend: https://github.com/KAfable/porkfolio
+frontend: https://github.com/KAfable/porkfolio
+priority: 1
 ---
 
 ## Introduction

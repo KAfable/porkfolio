@@ -6,11 +6,15 @@ tech: [Javascript, GraphQL, SQL, Postgres, Docker, React, URQL, Apollo Server, P
 tags: []
 template: 'project'
 previewImg: preview.png
+deployment: http://stage.missionctrl.dev/
+backend: https://github.com/Lambda-School-Labs/mission-control-be
+frontend: https://github.com/Lambda-School-Labs/mission-control-fe
+priority: 1
 ---
 
 ## Summary
 
-Freehold Summary goes here
+Mission Control Summary goes here
 
 ## My Role
 
