@@ -26,7 +26,6 @@ function useHover() {
 
 export default props => {
     const { title, url, img, desc, fe, be } = props;
-    console.log(props);
     return (
         <div className={styles.card}>
             {img ? (

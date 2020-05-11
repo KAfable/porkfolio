@@ -10,7 +10,6 @@ export default props => {
             allMarkdownRemark: { nodes },
         },
     } = props;
-    console.log(nodes);
     return (
         <Layout>
             <section>

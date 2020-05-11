@@ -3,7 +3,6 @@ import Layout from "../components/Layout/Layout";
 import { graphql } from "gatsby";
 
 export default props => {
-    console.log(props);
     return (
         <Layout>
             <div>This is the project page template</div>
