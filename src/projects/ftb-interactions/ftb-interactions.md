@@ -6,7 +6,7 @@ tech: [Zenscript, Java]
 tags: []
 template: 'project'
 previewImg: preview.png
-previewText: "Technology and magic Minecraft modpack with hundreds of hours of additional modded content."
+previewText: "Technology and magic Minecraft modpack with hundreds of hours of additional modded content that specifically focuses on cross-mod interactions to solve new engineering challenges, defeat buffed mobs, and flip the traditional progression pack paradigm on it's head."
 deployment: https://www.curseforge.com/minecraft/modpacks/ftb-interactions
 backend: https://github.com/FTBTeam/FTB-Interactions
 priority: 2

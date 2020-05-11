@@ -20,8 +20,7 @@ export default () => {
     `);
     return (
         <footer>
-            <p>Created by {data.site.siteMetadata.author}</p>
-            <p>Icons made by Freepik</p>
+            <p>Icon by Freepik</p>
         </footer>
     );
 };
