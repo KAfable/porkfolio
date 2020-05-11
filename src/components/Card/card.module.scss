@@ -6,6 +6,9 @@
     background-color: $bgAccent;
     border-bottom: $bgPrimary 1rem solid;
     padding: 1rem;
+    .imgWrapper {
+        border-radius: 3%;
+    }
     .textPreview {
         margin-left: 1rem;
         a {

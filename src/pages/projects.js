@@ -23,18 +23,17 @@ export default props => {
                     } = node.frontmatter;
                     const { slug } = node.fields;
                     return (
-                        <div>
-                            <Card
-                                title={title}
-                                url={`/${template}/${slug}`}
-                                img={
-                                    previewImg
-                                        ? previewImg.childImageSharp.fixed
-                                        : false
-                                }
-                                desc={previewText}
-                            />
-                        </div>
+                        <Card
+                            key={title}
+                            title={title}
+                            url={`/${template}/${slug}`}
+                            img={
+                                previewImg
+                                    ? previewImg.childImageSharp.fixed
+                                    : false
+                            }
+                            desc={previewText}
+                        />
                     );
                 })}
             </section>
@@ -49,6 +48,7 @@ export default props => {
 export const getAllProjects = graphql`
     query getAllProjects {
         allMarkdownRemark(
+            sort: { order: ASC, fields: frontmatter___priority }
             filter: { frontmatter: { template: { eq: "project" } } }
         ) {
             nodes {
@@ -62,7 +62,7 @@ export const getAllProjects = graphql`
                     previewText
                     previewImg {
                         childImageSharp {
-                            fixed(width: 200, height: 200) {
+                            fixed(width: 200) {
                                 ...GatsbyImageSharpFixed
                             }
                         }

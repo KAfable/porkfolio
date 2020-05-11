@@ -36,7 +36,6 @@ module.exports = {
                         },
                     },
                     `gatsby-transformer-sharp`,
-                    `gatsby-plugin-sharp`,
                 ],
             },
         },
@@ -45,6 +44,14 @@ module.exports = {
             options: {
                 name: "src",
                 path: `${__dirname}/src/`,
+            },
+        },
+        {
+            resolve: `gatsby-plugin-sharp`,
+            options: {
+                useMozJpeg: false,
+                stripMetadata: true,
+                defaultQuality: 75,
             },
         },
         "gatsby-plugin-sass",

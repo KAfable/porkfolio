@@ -24,10 +24,22 @@ function useHover() {
     return [ref, hovered];
 }
 
-export default ({ title, url, img, desc, fe, be }) => {
+export default props => {
+    const { title, url, img, desc, fe, be } = props;
+    console.log(props);
     return (
         <div className={styles.card}>
-            {img ? <Img fixed={img} /> : false}
+            {img ? (
+                <div className={styles.imgWrapper}>
+                    <Img
+                        className={styles.imgWrapper}
+                        alt={`${title}`}
+                        fixed={img}
+                    />
+                </div>
+            ) : (
+                false
+            )}
             <div className={styles.textPreview}>
                 <Link to={url}>
                     <h2>{title}</h2>
@@ -35,7 +47,7 @@ export default ({ title, url, img, desc, fe, be }) => {
                 </Link>
                 <div className="external-links">
                     {fe ? (
-                        <a href="https://github.com/KAfable?tab=repositories">
+                        <a href={fe}>
                             Frontend
                             <GitHubIcon fill={"#dcddde"} />
                         </a>
