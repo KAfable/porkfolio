@@ -5,7 +5,7 @@ import { graphql } from "gatsby";
 export default props => {
     return (
         <Layout>
-            <div>This is the project page template</div>
+            <div>Under construction</div>
         </Layout>
     );
 };

@@ -8,14 +8,26 @@
     padding: 1rem;
     .imgWrapper {
         border-radius: 3%;
+        margin: auto 0;
     }
     .textPreview {
         margin-left: 1rem;
         a {
             text-decoration: none;
         }
-        h2 {
-            font-size: 3rem;
+        .externalLinks {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-around;
+            .ghIcon {
+                width: 2rem;
+                margin: 0 auto;
+            }
+            .chainIcon {
+                padding-top: 0.2rem;
+                width: 2rem;
+                margin: 0 auto;
+            }
         }
     }
 }

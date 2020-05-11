@@ -6,6 +6,7 @@ tech: [Javascript, Node, GraphQL, SQL, Postgres, React, Apollo Client, Apollo Se
 tags: []
 template: 'project'
 previewImg: preview.png
+previewText: 'A resume workshop app that helps you brainstorm and write your resume with the most relevant and important information.'
 deployment: https://github.com/Lambda-School-Labs/resumeker-be
 backend: https://github.com/Lambda-School-Labs/resumeker-be
 frontend: https://github.com/Lambda-School-Labs/resumeker-fe
