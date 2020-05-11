@@ -1,3 +1,18 @@
+@import "../../styles/variables.scss";
+
 .card {
-    background: red;
+    display: flex;
+    flex-flow: row;
+    background-color: $bgAccent;
+    border-bottom: $bgPrimary 1rem solid;
+    padding: 1rem;
+    .textPreview {
+        margin-left: 1rem;
+        a {
+            text-decoration: none;
+        }
+        h2 {
+            font-size: 3rem;
+        }
+    }
 }

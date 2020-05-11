@@ -1,7 +1,8 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Link } from "gatsby";
-// import image from "../../projects/ftb-interactions/ftb-interactions-preview.png";
+import GitHubIcon from "../Icons/Github";
 import styles from "./card.module.scss";
+import Img from "gatsby-image";
 
 function useHover() {
     const ref = useRef();
@@ -23,19 +24,29 @@ function useHover() {
     return [ref, hovered];
 }
 
-export default ({ title, url }) => {
-    const [ref, hovered] = useHover();
-
+export default ({ title, url, img, desc, fe, be }) => {
     return (
-        <div className={styles.card} ref={ref}>
-            <h2>{title}</h2>
-            {/* <img src={image} /> */}
-            <Link to={url}>
-                <div>Preview text here</div>
-            </Link>
-            <div className="external-links">
-                <a href="https://github.com/KAfable?tab=repositories">GH</a>
-                <a href="https://github.com/KAfable?tab=repositories">Anchor</a>
+        <div className={styles.card}>
+            {img ? <Img fixed={img} /> : false}
+            <div className={styles.textPreview}>
+                <Link to={url}>
+                    <h2>{title}</h2>
+                    <div>{desc}</div>
+                </Link>
+                <div className="external-links">
+                    {fe ? (
+                        <a href="https://github.com/KAfable?tab=repositories">
+                            Frontend
+                            <GitHubIcon fill={"#dcddde"} />
+                        </a>
+                    ) : (
+                        false
+                    )}
+
+                    <a href="https://github.com/KAfable?tab=repositories">
+                        Anchor
+                    </a>
+                </div>
             </div>
         </div>
     );
