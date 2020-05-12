@@ -15,7 +15,12 @@ export default () => {
             </p>
             <p>
                 If you'd like to contact me, feel free to reach out at{" "}
-                <a href="mailto:kevinafable@gmail.com">kevinafable@gmail.com</a>{" "}
+                <a
+                    className={styles.contact}
+                    href="mailto:kevinafable@gmail.com"
+                >
+                    kevinafable@gmail.com
+                </a>{" "}
                 or reach out to me any other of the other platforms below. Just
                 a head's up I'm also currently looking for my next opportunity.
             </p>
@@ -53,7 +58,9 @@ export default () => {
                         PDF
                     </a>
                 </li>
-                <li>Discord: Vyraal1#0001</li>
+                <li>
+                    Discord: <span>Vyraal1#0001</span>
+                </li>
             </ul>
         </Layout>
     );
