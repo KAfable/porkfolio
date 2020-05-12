@@ -27,7 +27,7 @@ export default () => {
                             </Link>
                         </li>
                         <li>
-                            <Link className={styles.link} to="/about">
+                            <Link className={styles.link} to="/contact">
                                 contact
                             </Link>
                         </li>
