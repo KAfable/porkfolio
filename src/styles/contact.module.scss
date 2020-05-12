@@ -1,0 +1,22 @@
+@import "variables";
+
+h2 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+span {
+    color: $fontAccent;
+}
+
+a.contact {
+    color: $fontAccent;
+    text-decoration: none;
+    font-weight: 500;
+}
