@@ -12,9 +12,13 @@ backend: https://github.com/FTBTeam/FTB-Interactions
 priority: 2
 ---
 
-![Logo](.\ftb_interactions_preview.png)
+![Logo](.\preview.png)
 
 ## Summary
+
+FTB Interactions is a minecraft modpack focused on the interactions of hundreds of independently created mods that might not be initiatially obvious to players. 
+
+If you aren't familiar with the modded minecraft community, put simply, many developers ranging from hobbyist to professional modify the game to add new content such as items, monsters, or even entire dimensions. Early on in minecraft's history, this was pretty simple, but as the modded ecosystem grew some mods were found to be redundant, had great cosmetic content and no sense of progression, or were just buggy. Modpack developers started bundling mods together with a certain theme or purpose in a similar vein to how some developers offer opinionated frameworks so players can focus on just playing games.
 
 ## Technologies
 
