@@ -1,7 +1,5 @@
 # Portfolio Ideas
 
-- FreePik, remember to credit
-
 ## Blog
 
 - leftside navbar + profile, right side content
@@ -20,16 +18,6 @@
   - each card will have tags on the technology used
   - clicking on it will bring up a modal that has my role
 
-### Portfolio Pages
-
-Goal #1 - generate a slug for each post
-
-- `gatsby.md` -> slug is: `gatsby` -> endpoint at: `/blog/gatsby`
-- we need the slug from the file name to set up the correct endpoint
-
-Goal #2 - Generate the blog post template
-
-Goal #3 - Generate a new page for each post
 
 ### Blog Nav
 
