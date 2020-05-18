@@ -17,9 +17,9 @@ export default () => {
                 If you'd like to contact me, feel free to reach out at{" "}
                 <a
                     className={styles.contact}
-                    href="mailto:kevinafable@gmail.com"
+                    href="mailto:kevin.afable@gmail.com"
                 >
-                    kevinafable@gmail.com
+                    kevin.afable@gmail.com
                 </a>{" "}
                 or reach out to me any other of the other platforms below. Just
                 a head's up I'm also currently looking for my next opportunity.
