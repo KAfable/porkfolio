@@ -12,6 +12,12 @@
 
 ## To Do
 
+- add a learn more button on project cards
+- Freehold write up
+- Resumeker write up
+- Pic metric write up
+- figure out how to query images for mission control
+
 
 # Description
 

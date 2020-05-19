@@ -22,7 +22,11 @@ If you aren't familiar with the modded minecraft community, put simply, many dev
 
 ## Technologies
 
-ZenScript, Java
+Languages       | Libraries / Frameworks                                | Other
+----------------|-------------------------------------------------------| ----
+[Zenscript][2], Java | [Forge][1] | Minecraft
+
+
 
 ## My Role
 
@@ -33,3 +37,6 @@ Other minor responsibilities I also had included items such as evaluating creati
 ## What I Learned
 
 So much. So so much. It was basically drinking from a firehose and I was incredibly blessed to have a really patient co-lead in Saereth. It was my first major open source project if I can even call it that and I had a little taste of what development was like from a gaming perspective. While for most purists it might not count as actual software engineering, since it was a lot of scripting, I did get familiar with basic CS concepts such as loops, data structures to make the most out of the scripting capability we had. In addition I learned a lot about researching documentation and how to properly submit an honest-to-goodness useful GitHub bug report instead of "please fix".
+
+[1]: https://ftb.gamepedia.com/Minecraft_Forge?redirect=no
+[2]: https://github.com/CraftTweaker/ZenScript
