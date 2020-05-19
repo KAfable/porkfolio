@@ -12,14 +12,15 @@ frontend: https://github.com/Lambda-School-Labs/property-manager-fe
 backend: https://github.com/Lambda-School-Labs/property-manager-be
 priority: 3
 ---
+![Logo](.\preview.png)
 
 ## Summary
 
-Freehold Summary goes here
+Freehold is property management app that aims to help landlords keep track and organize all of the abstract 
 
 ## My Role
 
-My responsibilities while on Freehod team go here
+While working on Freehold, I was the Team Lead. Most of my regular activities were 
 
 ## What I Learned
 
