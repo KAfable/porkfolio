@@ -1,0 +1,25 @@
+@import "../../styles/variables.scss";
+
+.contact {
+    .contactHeader {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 3rem;
+    }
+    p {
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+    span {
+        color: $fontAccent;
+        font-weight: 500;
+    }
+    li {
+        font-weight: bold;
+    }
+    a.contact {
+        color: $fontAccent;
+        text-decoration: none;
+        font-weight: 500;
+    }
+}
