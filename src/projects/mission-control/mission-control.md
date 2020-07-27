@@ -27,9 +27,14 @@ Languages       | Libraries / Frameworks                                | Other
 ----------------|-------------------------------------------------------| ----
 Javascript, SQL | React, Postgres, URQL, Apollo Server, Prisma | Docker, GraphQL
 
+
+
 ## My Role
 
-My role on the team was split between leading the team and as a full stack developer. I did end up writing a material amount of GraphQL resolvers, lead the AWS deployments, and developed one of the main form components, but those was part of a larger team. My unique responsibilities and contributions on top of the code was leading daily standup, making sure everyone at least knew what was going on in other parts of the app, reaching out to stakeholders and communicating issues with them. 
+My role on the team was split between leading the team and as a full stack developer. I did end up writing a material amount of GraphQL resolvers, lead the AWS deployments, and developed one of the main form components, but those was part of a larger team. My unique responsibilities and contributions on top of the code was leading daily standup, making sure everyone at least knew what was going on in 
+other parts of the app, reaching out to stakeholders and communicating issues with them. 
+
+![editor](.\SingleProjectView.png)
 
 ## What I Learned
 
@@ -38,3 +43,4 @@ This was my first rough introduction to Docker. In fact the only technology/serv
 Also I learned that when you have a really strong developer on your team, just try your best to not get in their way. The other lead on the team was Nick, and Nick was pretty much ahead in terms of frontend and overall javascript knowledge with the rest of the group. We trusted his decisions, tried to pair program whenever possible and always deferred to him for technical conflicts and resolutions.
 
 [1]: https://lambdaschool.com/the-commons/how-lambda-school-labs-works-whiteboard-friday
+[2]: .\SingleProjectView.png
