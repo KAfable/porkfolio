@@ -1,6 +1,6 @@
 ---
 title: "Template"
-published: true
+published: false
 date: 1/1/1970
 template: 'blog'
 tech: [Zenscript, Java]
